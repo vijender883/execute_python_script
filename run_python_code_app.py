@@ -162,7 +162,8 @@ lines = globals()["__builtins__"]["print"].__self__._getframe().f_back.f_locals[
         # Run the code in a subprocess with timeout
         start_time = time.time()
         result = subprocess.run(
-            ['python', temp_filename],
+            # for local use './venv/bin/python3'
+            ['~/execute_python_script/venv/bin/python3', temp_filename],
             capture_output=True,
             text=True,
             timeout=5  # 5 second timeout to prevent infinite loops
