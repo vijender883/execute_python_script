@@ -163,7 +163,7 @@ lines = globals()["__builtins__"]["print"].__self__._getframe().f_back.f_locals[
         start_time = time.time()
         result = subprocess.run(
             # for local use './venv/bin/python3'
-            ['~/execute_python_script/venv/bin/python3', temp_filename],
+            ['/usr/bin/python3', temp_filename],
             capture_output=True,
             text=True,
             timeout=5  # 5 second timeout to prevent infinite loops
