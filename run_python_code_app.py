@@ -223,4 +223,4 @@ lines = globals()["__builtins__"]["print"].__self__._getframe().f_back.f_locals[
             os.remove(temp_filename)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5002, debug=False)
