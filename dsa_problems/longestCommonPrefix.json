@@ -1,0 +1,29 @@
+{
+    "main_code": "if __name__ == \"__main__\":\n    # Test case 1\n    input1 = [\"geeksforgeeks\", \"geeks\", \"geek\", \"geezer\"]\n    print(f\"Test case 1: {longestCommonPrefix(input1)}\")\n    \n    # Test case 2\n    input2 = [\"apple\", \"ape\", \"april\"]\n    print(f\"Test case 2: {longestCommonPrefix(input2)}\")\n    \n    # Test case 3\n    input3 = [\"dog\", \"cat\", \"mouse\"]\n    print(f\"Test case 3: {longestCommonPrefix(input3)}\")\n    \n    # Test case 4\n    input4 = [\"flower\", \"flow\", \"flight\"]\n    print(f\"Test case 4: {longestCommonPrefix(input4)}\")",
+    "test_cases": [
+        {
+            "testCase": 1,
+            "description": "Common prefix 'gee'",
+            "input": "strs = [\"geeksforgeeks\", \"geeks\", \"geek\", \"geezer\"]",
+            "expectedOutput": "\"gee\""
+        },
+        {
+            "testCase": 2,
+            "description": "Common prefix 'ap'",
+            "input": "strs = [\"apple\", \"ape\", \"april\"]",
+            "expectedOutput": "\"ap\""
+        },
+        {
+            "testCase": 3,
+            "description": "No common prefix",
+            "input": "strs = [\"dog\", \"cat\", \"mouse\"]",
+            "expectedOutput": "\"\""
+        },
+        {
+            "testCase": 4,
+            "description": "Common prefix 'fl'",
+            "input": "strs = [\"flower\", \"flow\", \"flight\"]",
+            "expectedOutput": "\"fl\""
+        }
+    ]
+}

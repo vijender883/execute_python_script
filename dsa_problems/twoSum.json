@@ -1,0 +1,29 @@
+{
+    "main_code": "if __name__ == \"__main__\":\n    # Test case 1\n    arr1 = [0, -1, 2, -3, 1]\n    target1 = -2\n    print(f\"Test case 1: {twoSum(arr1, target1)}\")\n    \n    # Test case 2\n    arr2 = [1, 2, 3, 4, 5]\n    target2 = 9\n    print(f\"Test case 2: {twoSum(arr2, target2)}\")\n    \n    # Test case 3\n    arr3 = [1, 2, 3, 4, 5]\n    target3 = 10\n    print(f\"Test case 3: {twoSum(arr3, target3)}\")\n    \n    # Test case 4\n    arr4 = []\n    target4 = 0\n    print(f\"Test case 4: {twoSum(arr4, target4)}\")",
+    "test_cases": [
+        {
+            "testCase": 1,
+            "description": "Basic test with negative target",
+            "input": "arr = [0, -1, 2, -3, 1], target = -2",
+            "expectedOutput": "True"
+        },
+        {
+            "testCase": 2,
+            "description": "Basic test with positive target",
+            "input": "arr = [1, 2, 3, 4, 5], target = 9",
+            "expectedOutput": "True"
+        },
+        {
+            "testCase": 3,
+            "description": "No sum equals target",
+            "input": "arr = [1, 2, 3, 4, 5], target = 10",
+            "expectedOutput": "False"
+        },
+        {
+            "testCase": 4,
+            "description": "Empty array",
+            "input": "arr = [], target = 0",
+            "expectedOutput": "False"
+        }
+    ]
+}
